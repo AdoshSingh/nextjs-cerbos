@@ -1,5 +1,9 @@
 import {blogs} from "@/data/dummy";
 
+export async function getAllBlogs() {
+  return blogs;
+}
+
 export async function getBlog(id) {
   return blogs[id] || null;
 }
